@@ -1,4 +1,275 @@
+.all-font-family {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 body{
     margin: 0;
     padding: 0;
+}
+.display-flex{
+    display: flex;
+}
+.text-primary{
+    /* dark1 */
+   color: #131313;
+}
+.text-gray{
+    /* dark2 */
+   color: #424242;
+}
+.text-light-gray{
+    /* dark3 */
+    color: #727272;
+}
+.bg-primary{
+    background-color: rgba(255, 144, 14, 0.09);
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+}
+main > section{
+    margin-top: 130px;
+}
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+
+}
+.brand{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+
+}
+.nav-links{
+  
+    display: flex;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+
+}
+.navbar , .banner{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/* banner styles */
+.banner-containt{
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+    align-items: center;
+    justify-content: center;
+  
+}
+.banner-image{
+    width: 100%;
+    margin-top: 50px;
+}
+/* mainworkeds */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.teams{
+    align-items: center;
+   
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    
+    grid-gap: 10px;
+}
+.team-service{
+     
+    margin-left: 130px;
+    max-width: 530px;
+    align-items: center;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700 ;
+}
+#Quick-list{
+    font-weight: 500;
+}
+.text-primary{
+    color: #FF900E;
+}
+/* some fact related styles */
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fact-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+
+}
+.fact-number{
+    font-size:2.8rem ;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size:1.25em ;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.fact-description{
+    max-width: 540px;
+}
+/* sponsor related style */
+.sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.soponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.soponsor-companies{
+    filter: grayscale(100%);
+}
+/* Features-section */
+#Features-section-title{
+    border-left:8px SOLID #FF900E;
+    padding-left: 20px;
+}
+.Features{
+    gap: 120px;
+   
+
+}
+.feature-card{
+ padding: 30px;
+    box-shadow: 0 4px  30px 0 rgb( 0 ,0 ,0, 0.06);
+border-radius: 8px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+   
+}
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    margin-top: -100px;
+    margin-left: -100px;
+
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.featured-img img{
+    width: 100%;
+}
+.footer{
+    
+}
+/* footer */
+.footer{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* mediaQuary */
+@media screen and (max-width:576px) {
+    .navbar, .nav-links, .teams ,.Features ,.footer{
+        flex-direction: column;
+        
+      
+    }
+    .team-img-container, .facts-container,.soponsor-companies{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-service{
+     
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    #experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    margin-top: -100px;
+    margin-left: -100px;
+
+}
+   
+}
+.facts-container, .soponsor-companies{
+    justify-items: center;
+    gap: 24px;
+}
+#experience-badge{
+    padding: 20px 22px;
+    font-size: 1rem;
+   justify-items: center;
+   width: auto;
+
+}
+.text-light-gray{
+    background-color: aliceblue;
+    width: auto;
+}
+
+}
+
+/* mediam screen quary */
+
+@media screen and (min-width:577px) and (max-width:996px){
+    .teams , .Features{
+        flex-direction: column;
+    }
+    .team-service{
+        margin-left: 50px auto;
+    }
+    .facts-container, .soponsor-companies{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left:30px;
+        justify-items: center;
+        gap: 50px;
+    }
+
 }
